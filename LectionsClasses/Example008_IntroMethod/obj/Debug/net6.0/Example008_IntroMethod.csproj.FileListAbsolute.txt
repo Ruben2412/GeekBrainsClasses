@@ -1,0 +1,15 @@
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\bin\Debug\net6.0\Example008_IntroMethod.exe
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\bin\Debug\net6.0\Example008_IntroMethod.deps.json
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\bin\Debug\net6.0\Example008_IntroMethod.runtimeconfig.json
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\bin\Debug\net6.0\Example008_IntroMethod.dll
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\bin\Debug\net6.0\Example008_IntroMethod.pdb
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.csproj.AssemblyReference.cache
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.AssemblyInfoInputs.cache
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.AssemblyInfo.cs
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.csproj.CoreCompileInputs.cache
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.dll
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\refint\Example008_IntroMethod.dll
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.pdb
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\Example008_IntroMethod.genruntimeconfig.cache
+D:\GeekBrainsClasses\LectionsClasses\Example008_IntroMethod\obj\Debug\net6.0\ref\Example008_IntroMethod.dll
