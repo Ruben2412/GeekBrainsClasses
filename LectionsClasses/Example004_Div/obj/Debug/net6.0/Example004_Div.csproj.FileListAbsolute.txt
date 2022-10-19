@@ -1,0 +1,15 @@
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\bin\Debug\net6.0\Example004_Div.exe
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\bin\Debug\net6.0\Example004_Div.deps.json
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\bin\Debug\net6.0\Example004_Div.runtimeconfig.json
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\bin\Debug\net6.0\Example004_Div.dll
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\bin\Debug\net6.0\Example004_Div.pdb
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.csproj.AssemblyReference.cache
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.AssemblyInfoInputs.cache
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.AssemblyInfo.cs
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.csproj.CoreCompileInputs.cache
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.dll
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\refint\Example004_Div.dll
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.pdb
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\Example004_Div.genruntimeconfig.cache
+D:\GeekBrainsClasses\LectionsClasses\Example004_Div\obj\Debug\net6.0\ref\Example004_Div.dll
