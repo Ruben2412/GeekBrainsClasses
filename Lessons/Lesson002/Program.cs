@@ -67,7 +67,7 @@ else
 */
 //Задача 2: Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого
 
-/*
+
 bool Square(int a, int b)
 {
     if(a == b * b || b == a * a)
@@ -81,11 +81,10 @@ bool Square(int a, int b)
 }
 
 
-Console.WrireLine("Введите Первую цифру: ");
+Console.WriteLine("Введите Первую цифру: ");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.WrireLine("Введите Вторую цифру: ");
+Console.WriteLine("Введите Вторую цифру: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
-result = Square; 
+bool result = Square(a,b);
 Console.WriteLine($"It is your number {result}");
-*/
