@@ -64,7 +64,7 @@ Console.WriteLine($"Вторая цифра из {N} is {result}");
 
 /*
 //Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
+//Первая версия
 int TherdNum(int n)
 {
     if (n > 100)
@@ -86,16 +86,63 @@ int CutNumb(int numb)
     return numb;
 }
 
-Console.Write("Введите трех значное число: ");
+Console.Write("Введите число от трех знаков и больше: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
 int result = CutNumb(TherdNum(N));
 
 Console.WriteLine($"Третья цифра из {N} is {result}");
+
+
+
+
 */
 
 
 
+
+/*
+//Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+//Вторая версия
+int TherdNum(int n)
+{
+    if (n > 100)
+        {
+        Console.WriteLine($"отлично сейчас подскажем третью с лева по счету цифру");
+        return n;
+        }
+    else 
+        {
+        n = 0;
+        Console.WriteLine($"Введенное число не является трех значным");
+        return 0;
+        }
+}    
+
+void CutNum(int n)
+{
+    int count = 0;
+    while(count < 1000)
+    {
+        if (n < 1000)
+        {
+            n = n % 10;
+            Console.WriteLine($"Третье число с лева {n}");
+            break;
+        }   
+        else
+        {
+            n = n / 10;
+            count++;
+        }
+    }
+}
+
+
+Console.Write("Введите число от трех знаков и больше: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+CutNum(TherdNum(N));
 
 
 
