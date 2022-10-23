@@ -34,7 +34,7 @@ Polindrom(N);
 
 
 
-/*
+
 //Задача 21 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 double Long(double x1, double y1, double z1, double x2, double y2, double z2)
@@ -42,7 +42,7 @@ double Long(double x1, double y1, double z1, double x2, double y2, double z2)
     double A = x1 - x2;
     double B = y1 - y2;
     double C = z1 - z2;
-    double D = A * A + B * B;
+    double D = A * A + B * B + C * C;
     return Math.Sqrt(D);
 } 
 
@@ -72,7 +72,7 @@ Console.WriteLine(resolt);
 
 
 
-*/
+
 
 
 
