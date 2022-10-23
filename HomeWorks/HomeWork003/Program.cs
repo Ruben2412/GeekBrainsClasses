@@ -32,7 +32,7 @@ Polindrom(N);
 */
 
 
-
+/*
 
 
 //Задача 21 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -69,7 +69,7 @@ double resolt = Long(X1, Y1, Z1, X2, Y2, Z2);
 Console.WriteLine(resolt);
 
 
-
+*/
 
 
 
@@ -85,7 +85,7 @@ void Сube(int n)
     int i = 1;
     while(i < n + 1)
     {
-        int courent = i * i *i;
+        int courent = i * i * i;
         Console.WriteLine(courent);
         i++;
     }
