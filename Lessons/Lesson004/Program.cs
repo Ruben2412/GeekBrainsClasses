@@ -34,7 +34,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Sum of pices of numbers in {number} is {HowMany(number)}");
 */
 
-
+/*
 int Multiplier(int integer)
 {
     int multiplier = 1;
@@ -49,4 +49,4 @@ int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Product of number {N} is {Multiplier(N)}");
 
 
-
+*/

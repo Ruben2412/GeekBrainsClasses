@@ -102,7 +102,8 @@ int[] Replace(int[] array)
     }
     return array;
 }
-Console.Write("Input a number of elements: ");
+
+/*Console.Write("Input a number of elements: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input min possible value: ");
 int min = Convert.ToInt32(Console.ReadLine());
@@ -112,7 +113,7 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandomArray(n, min, max);
 ShowArray(myArray);
 ShowArray(Replace(myArray));
-
+*/
 
 
 
