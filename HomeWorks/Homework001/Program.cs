@@ -1,23 +1,27 @@
 ﻿/*
 // Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
+void Max( int x, int y)
+{
+    if (x>y) 
+    {
+        Console.WriteLine($"Max is {x}");
+        Console.WriteLine($"Min is {y}");
+    }
+    else
+    {
+        Console.WriteLine($"Max is {y}");
+        Console.WriteLine($"Min is {x}");
+    }
+}
+
 Console.WriteLine("Input a First number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input a Second number: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
-if (a>b) 
-{
-Console.WriteLine($"Max is {a}");
-Console.WriteLine($"Min is {b}");
-}
-
-else
-{
-Console.WriteLine($"Max is {b}");
-Console.WriteLine($"Min is {a}");
-}
+Max(a, b);
 
 
 
@@ -39,18 +43,20 @@ int n2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input a Third number: ");
 int n3 = Convert.ToInt32(Console.ReadLine());
 
-int max=n1;
-if(n2>max) max=n2;
-if(n3>max) max=n3;
+void Max( int a, int b, int c)
+{
+    int max=a;
+    if(b>max) max=b;
+    if(c>max) max=c;
+    Console.WriteLine($"Max is {max}");  
+}
 
-Console.WriteLine($"Max is {max}");  
+Max(n1, n2,n3);
 
 
 
 
 */
-
-
 
 
 

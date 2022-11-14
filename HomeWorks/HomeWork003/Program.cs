@@ -32,6 +32,21 @@ Polindrom(N);
 */
 
 
+
+
+
+/*
+string Replase(int count, string text)
+{
+    int i = 0;
+    string result = String.Empty;
+
+    while (i < count)
+    {
+        
+        i++
+    }
+}
 /*
 
 

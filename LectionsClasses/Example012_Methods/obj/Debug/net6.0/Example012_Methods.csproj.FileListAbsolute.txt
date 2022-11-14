@@ -1,0 +1,15 @@
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\bin\Debug\net6.0\Example012_Methods.exe
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\bin\Debug\net6.0\Example012_Methods.deps.json
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\bin\Debug\net6.0\Example012_Methods.runtimeconfig.json
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\bin\Debug\net6.0\Example012_Methods.dll
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\bin\Debug\net6.0\Example012_Methods.pdb
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.csproj.AssemblyReference.cache
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.AssemblyInfoInputs.cache
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.AssemblyInfo.cs
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.csproj.CoreCompileInputs.cache
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.dll
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\refint\Example012_Methods.dll
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.pdb
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\Example012_Methods.genruntimeconfig.cache
+D:\GeekBrainsClasses\LectionsClasses\Example012_Methods\obj\Debug\net6.0\ref\Example012_Methods.dll
