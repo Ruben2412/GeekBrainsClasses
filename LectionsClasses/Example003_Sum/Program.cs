@@ -1,4 +1,5 @@
-﻿int numberA = new Random().Next(1, 100); // 1 2 3 4 . . . 9
+﻿//************************************************************************** Classes 1 *******************************************************************************************//
+int numberA = new Random().Next(1, 100); // 1 2 3 4 . . . 9
 Console.WriteLine (numberA); 
 int numberB = new Random().Next(1,100);
 Console.WriteLine (numberB);

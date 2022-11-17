@@ -1,4 +1,5 @@
-﻿void FillArray (int[] collection)
+﻿//************************************************************************** Classes 2 *******************************************************************************************//
+void FillArray (int[] collection)
 {
     int length = collection.Length;
     int index = 0;
