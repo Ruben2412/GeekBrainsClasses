@@ -1,22 +1,12 @@
-﻿/*
-
-int FindSum(int number)
+﻿int FindSum(int number)
 {
     int sum = 0;
     for(int current = 1; current<= number; current++)
         sum += current;
-    
     return sum;
 
 }
 
-
-Console.Write("Input the nuber: ");
-int num = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine($"Sum of numbers between 1 and {num} is {FindSum(num)}");
-*/
-/*
 int HowMany(int num)
 {
     int digit = 0;
@@ -28,13 +18,6 @@ int HowMany(int num)
     return digit;
 }
 
-Console.Write("Input the nuber: ");
-int number = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine($"Sum of pices of numbers in {number} is {HowMany(number)}");
-*/
-
-/*
 int Multiplier(int integer)
 {
     int multiplier = 1;
@@ -43,10 +26,17 @@ int Multiplier(int integer)
     return multiplier;
 } 
 
-Console.Write("Input Your Number: ");
-int N = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input the nuber: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Product of number {N} is {Multiplier(N)}");
+/*//Найти сумму числе включая введенное значение
+Console.WriteLine($"Sum of numbers between 1 and {num} is {FindSum(num)}");
+*/
 
+/*//Найти количество чисел в введенном значении
+Console.WriteLine($"Sum of pices of numbers in {num} is {HowMany(num)}");
+*/
 
+/*//Найти произведение всех чисел включая введенное значение
+Console.WriteLine($"Product of number {num} is {Multiplier(num)}");
 */

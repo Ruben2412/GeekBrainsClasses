@@ -1,0 +1,15 @@
+D:\GeekBrainsClasses\Lessons\Lesson005\bin\Debug\net6.0\Lesson005.exe
+D:\GeekBrainsClasses\Lessons\Lesson005\bin\Debug\net6.0\Lesson005.deps.json
+D:\GeekBrainsClasses\Lessons\Lesson005\bin\Debug\net6.0\Lesson005.runtimeconfig.json
+D:\GeekBrainsClasses\Lessons\Lesson005\bin\Debug\net6.0\Lesson005.dll
+D:\GeekBrainsClasses\Lessons\Lesson005\bin\Debug\net6.0\Lesson005.pdb
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.csproj.AssemblyReference.cache
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.GeneratedMSBuildEditorConfig.editorconfig
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.AssemblyInfoInputs.cache
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.AssemblyInfo.cs
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.csproj.CoreCompileInputs.cache
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.dll
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\refint\Lesson005.dll
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.pdb
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\Lesson005.genruntimeconfig.cache
+D:\GeekBrainsClasses\Lessons\Lesson005\obj\Debug\net6.0\ref\Lesson005.dll

@@ -1,4 +1,4 @@
-﻿
+﻿/*
 int[] CreateRandomArray(int size)
 {
     int[] array = new int [size];
@@ -143,13 +143,3 @@ ShowDoubleArray(myArray);
 
 MinMax(myArray);
 */
-
-
-
-
-
-
-
-
-
-
