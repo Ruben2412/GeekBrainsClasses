@@ -43,7 +43,6 @@ string Replase(int count, string text)
 
     while (i < count)
     {
-        
         i++
     }
 }
