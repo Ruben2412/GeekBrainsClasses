@@ -1,27 +1,17 @@
-﻿/*
-// Вид 1
+﻿/*// Вид 1
 void Method1()
 {
     Console.WriteLine("Author ...");
 
 }
 Method1();
-
-
-
 */
-
-
-
-
-/*
-//Вид 2
+/*//Вид 2
 void Method2(string msg)
 {
     Console.WriteLine(msg);
 }
 Method2(msg:"Some text");
-
 
 void Method21(string msg, int count)
 {
@@ -35,35 +25,18 @@ void Method21(string msg, int count)
 }
 //Method21(msg:"text", count: 4);
 Method21(count: 4, msg:"new text");
-
-
-
-
 */
 
-
-
-
-/*
-//Вид 3
+/*//Вид 3
 int Method3()
 {
     return DateTime.Now.Year;
 }
 int year = Method3();
 Console.WriteLine(year);
-
-
-
-
 */
 
-
-
-
-/*
-//Вид 4
-
+/*//Вид 4
 string Method4(int count, string text)
 {
     int i = 0;
@@ -79,16 +52,10 @@ string Method4(int count, string text)
 
 string res = Method4(10, "asdf");
 Console.WriteLine(res);
-
-
-
 */
 
-
-
-/*
-// цикл for
-string Method4(int count, string text)
+/*// цикл for
+string Method41(int count, string text)
 {
     string result = String.Empty;
 
@@ -99,20 +66,11 @@ string Method4(int count, string text)
      return result;
 }
 
-string res = Method4(10, "asdf");
+string res = Method41(10, "asdf");
 Console.WriteLine(res);
-
-
-
-
 */
 
-
-
-
-/*
-// взаимодействие цииклов
-
+/*// взаимодействие цииклов
 for( int i = 1; i <=10; i ++)
 {
     for(int j = 1; j <=10; j ++)
@@ -122,16 +80,9 @@ for( int i = 1; i <=10; i ++)
     Console.WriteLine();
 }
 
-
-
-
 */
 
-
-
-
-/*
-//=====Работа с текстом
+/*//=====Работа с текстом
 // Дан текст. В тексте нужно все пробелы заменить чёрточками,
 // маленькие буквы “к” заменить большими “К”,
 // а большие “С” маленькими “с”.
@@ -163,17 +114,9 @@ Console.WriteLine();
 
 newText = Replase(newText, 'к', 'К');
 Console.WriteLine(newText);
-
-
-
-
 */
 
-
-
-
-/*
-int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+/*int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
 
 void PtintArray(int[] array)
 {
@@ -205,17 +148,9 @@ void SelectionSort(int[] array)
 PtintArray(arr);
 SelectionSort(arr);
 PtintArray(arr);
-
-
-
-
 */
 
-
-
-
-/*
-int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+/*int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
 
 void PtintArray(int[] array)
 {
@@ -247,8 +182,4 @@ void SelectionSort(int[] array)
 PtintArray(arr);
 SelectionSort(arr);
 PtintArray(arr);
-
-
-
-
 */
