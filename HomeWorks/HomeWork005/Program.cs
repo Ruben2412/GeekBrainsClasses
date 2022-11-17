@@ -1,5 +1,4 @@
-﻿/*
-int[] CreateRandomArray(int size)
+﻿int[] CreateRandomArray(int size)
 {
     int[] array = new int [size];
 
@@ -98,8 +97,7 @@ int SumOfOddNum(int[] array)
 Console.Write("Enter the number of elements in the array: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-/*
-//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+/*//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
 int[] myArray = CreateRandomArray(n);
 
@@ -109,8 +107,8 @@ int Sum = SumEvenNum(myArray);
 
 Console.WriteLine("The found number of even numbers is " + Sum);
 */
-/*
-//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
+/*//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 //Первый вариант
 
 int[] myArray = CreateSizeArray(n);
@@ -121,8 +119,8 @@ int sumOddNum = SumOddNum(myArray);
 
 Console.WriteLine("sum of odd array elementsis " + sumOddNum);
 */
-/*
-//Второй вариант
+
+/*//Второй вариант
 
 int[] myArray = CreateSizeArray(n);
 
@@ -132,8 +130,8 @@ int sumOddNum = SumOfOddNum(myArray);
 
 Console.WriteLine("sum of odd array elements is " + sumOddNum);
 */
-/*
-//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+/*//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
 double[] myArray = new double[n];
 
