@@ -70,7 +70,6 @@ int SumEvenNum(int[] array)
     for(int i = 0; i < array.Length; i++)
         if(array[i] % 2 == 0)
             sum ++;
-        
         return sum;
 }
 
@@ -97,7 +96,7 @@ int SumOfOddNum(int[] array)
 Console.Write("Enter the number of elements in the array: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-/*//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
 
 int[] myArray = CreateRandomArray(n);
 
@@ -106,7 +105,7 @@ ShowArray(myArray);
 int Sum = SumEvenNum(myArray);
 
 Console.WriteLine("The found number of even numbers is " + Sum);
-*/
+
 
 /*//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 //Первый вариант
