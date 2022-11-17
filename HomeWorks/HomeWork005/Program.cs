@@ -24,7 +24,7 @@ void CreateDoubleRandomArray(double[] array)
 {
     for(int i = 0; i < array.Length; i++)
         {
-            array[i] = Convert.ToDouble(new Random().Next(100,1000)) / 100;
+            array[i] = Convert.ToDouble(new Random().Next(100,10000)) / 100;
         }
 }
 
