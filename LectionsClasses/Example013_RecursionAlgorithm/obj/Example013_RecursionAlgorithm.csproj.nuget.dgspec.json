@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GeekBrainsClasses\\Lessons\\Lesson001\\Lesson001.csproj": {}
+    "D:\\GeekBrainsClasses\\LectionsClasses\\Example013_RecursionAlgorithm\\Example013_RecursionAlgorithm.csproj": {}
   },
   "projects": {
-    "D:\\GeekBrainsClasses\\Lessons\\Lesson001\\Lesson001.csproj": {
+    "D:\\GeekBrainsClasses\\LectionsClasses\\Example013_RecursionAlgorithm\\Example013_RecursionAlgorithm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GeekBrainsClasses\\Lessons\\Lesson001\\Lesson001.csproj",
-        "projectName": "Lesson001",
-        "projectPath": "D:\\GeekBrainsClasses\\Lessons\\Lesson001\\Lesson001.csproj",
+        "projectUniqueName": "D:\\GeekBrainsClasses\\LectionsClasses\\Example013_RecursionAlgorithm\\Example013_RecursionAlgorithm.csproj",
+        "projectName": "Example013_RecursionAlgorithm",
+        "projectPath": "D:\\GeekBrainsClasses\\LectionsClasses\\Example013_RecursionAlgorithm\\Example013_RecursionAlgorithm.csproj",
         "packagesPath": "C:\\Users\\ilove\\.nuget\\packages\\",
-        "outputPath": "D:\\GeekBrainsClasses\\Lessons\\Lesson001\\obj\\",
+        "outputPath": "D:\\GeekBrainsClasses\\LectionsClasses\\Example013_RecursionAlgorithm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ilove\\AppData\\Roaming\\NuGet\\NuGet.Config"
