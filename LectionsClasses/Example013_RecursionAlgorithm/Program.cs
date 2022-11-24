@@ -111,7 +111,6 @@ FillImage(13, 13);
 PrintImage(pic);
 */
 
-
 /*//Вычисление факториала
 double Factorial(int n)
 { 
