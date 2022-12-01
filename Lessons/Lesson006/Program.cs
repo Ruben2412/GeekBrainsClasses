@@ -1,4 +1,32 @@
 ﻿//************************************************************************** Lesson 6 *********************************************************************************************//
+/*//void не меняет значение
+void ShowNum(int num)
+{
+    num += 5;
+    Console.WriteLine(num);
+}
+
+int a = 0;
+ShowNum(a);
+Console.WriteLine(a);
+//void меняет массив
+void ShowNum(int[] num)
+{
+    num[0] += 5;
+    Console.WriteLine(num[0]);
+}
+
+int[] a = {0, 6, 2};
+ShowNum(a);
+Console.WriteLine(a[0]);
+*/
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
     int[] array = new int [size];
@@ -71,15 +99,13 @@ int[] Fibonacci(int a, int b, int size)
     return array;
 }
 
-/*//Значения для массива и вызов функцийй(методов)
-Console.Write("Input a number of elements: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+//Значения для массива и вызов функцийй(методов)
+int a = InputNumbers("Input a number of elements: ");
+int min = InputNumbers("Input min possible value: ");
+int max = InputNumbers("Input max possible value: ");
 
-int[] myArray = CreateRandomArray(n, min, max);
+int[] myArray = CreateRandomArray(a, min, max);
+
 ShowArray(myArray);
 
 ReverseArray(myArray);
@@ -89,70 +115,37 @@ ShowArray(myArray);
 ReplaceArray(myArray);
 
 ShowArray(myArray);
-*/
 
-/*//void не меняет значение
-void ShowNum(int num)
-{
-    num += 5;
-    Console.WriteLine(num);
-}
+Console.WriteLine();
+//Напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник с сторонами такой длины.
+int b = InputNumbers("Input first number: ");
+int c = InputNumbers("Input second number: ");
+int d = InputNumbers("Input third number: ");
 
-int a = 0;
-ShowNum(a);
-Console.WriteLine(a);
-*/
-
-/*//void меняет массив
-void ShowNum(int[] num)
-{
-    num[0] += 5;
-    Console.WriteLine(num[0]);
-}
-
-int[] a = {0, 6, 2};
-ShowNum(a);
-Console.WriteLine(a[0]);
-*/
-
-/*//Напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник с сторонами такой длины.
-
-Console.Write("Input first number: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input second number: ");
-int n2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input third number: ");
-int n3 = Convert.ToInt32(Console.ReadLine());
-
-bool result = Triangle(n1 , n2 , n3);
+bool result = Triangle(a , b , c);
 
 Console.WriteLine(result);
-*/
 
-/*//Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: a и b.
-Console.Write("Input firt number: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input second number: ");
-int n2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max sum of element: ");
-int n3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: a и b.
+int e = InputNumbers("Input first number: ");
+int f = InputNumbers("Input second number: ");
+int g = InputNumbers("Input third number: ");
 
-int[] myArray = Fibonacci(n1, n2, n3);
+int[] myMas = Fibonacci(e, f, g);
 
-ShowArray(myArray);
-*/
+ShowArray(myMas);
 
-/*//Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
-Console.Write("Input a number of elements: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
+int h = InputNumbers("Input a number of elements: ");
+int mini = InputNumbers("Input min possible value: ");
+int maxi = InputNumbers("Input max possible value: ");
 
-int[] myArray = CreateRandomArray(n, min, max);
+int[] myArr = CreateRandomArray(h, mini, maxi);
 
-ShowArray(myArray);
+ShowArray(myArr);
 
-ShowArray(CloneArray(myArray));
-*/
+ShowArray(CloneArray(myArr));
+
+Console.WriteLine();

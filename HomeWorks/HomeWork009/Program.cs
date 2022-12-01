@@ -53,28 +53,29 @@ int Akerman(int m, int n)
         return (Akerman(m - 1, Akerman(m, n - 1)));
 }
 
-// Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
-/*//Вариант первый
-int n = InputNumbers("Enter some number: ");
+//Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1.
+//Вариант первый
+int a = InputNumbers("Enter some number: ");
 int count = 1;
-ShowReverseNumber(n, count);
-*/
+ShowReverseNumber(a, count);
 
-/*//Вариант второй
-int n = InputNumbers("Enter some number: ");
-ShowReverseNumber2(n);
-*/
+Console.WriteLine();
+//Вариант второй
+int b = InputNumbers("Enter some number: ");
+ShowReverseNumber2(b);
 
-/*//Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
-int m = InputNumbers("Enter some number: ");
-int n = InputNumbers("Enter another number: ");
+Console.WriteLine();
+//Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+int c = InputNumbers("Enter some number: ");
+int d = InputNumbers("Enter another number: ");
 
-Reverse(m,n);
-*/
+Reverse(c, d);
 
-/*//Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
-int m = InputNumbers("Enter some positive number: ");
-int n = InputNumbers("Enter another positive number: ");
+Console.WriteLine();
+//Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+int e = InputNumbers("Enter some positive number: ");
+int f = InputNumbers("Enter another positive number: ");
 
-Console.Write(Akerman(m, n));
-*/
+Console.Write(Akerman(e, f));
+
+Console.WriteLine();

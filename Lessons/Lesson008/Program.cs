@@ -1,4 +1,11 @@
 ﻿//************************************************************************** Lesson 8 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int[,] CreateRandom2DArray(int rows, int columns, int minvalue, int maxvalue)
 {
     int[,] array = new int[rows, columns];
@@ -36,6 +43,7 @@ void ChangeRows(int[,] array, int row1, int row2)
             array[row1, j] = array[row2, j];
             array[row2, j] = temp;
         }
+    Console.WriteLine();    
     }
     else Console.WriteLine("Incorrect rows  for changing!");
 }
@@ -89,45 +97,65 @@ int[,] DeleteRowAndColumn(int[,] array)
             k--;
     }
     return arr1;
-Console.WriteLine();
 }
 
-Console.Write("Input a number of rows: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+// Задача 1. Задайте двумерный массив. Напишите программу, которая поменяет местами n и m строки массива.
+int a = InputNumbers("Input a number of rows: ");
+int b = InputNumbers("Input a number of columns: ");
+int min = InputNumbers("Input a min possible value: ");
+int max = InputNumbers("Input a max possible value: ");
 
-int[,] myArray = CreateRandom2dArray(m, n, min, max);
+int c = InputNumbers("Input a number of first row to change: ");
+int d = InputNumbers("Input a number of second row to change: ");
+
+int[,] myArray = CreateRandom2DArray(a, b, min, max);
+
 Show2dArray(myArray);
 
-/*// Задача 1. Задайте двумерный массив. Напишите программу, которая поменяет местами n и m строки массива.
-Console.Write("Input a number of first row to change: ");
-int r1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of second row to change: ");
-int r2 = Convert.ToInt32(Console.ReadLine());
+ChangeRows(myArray, c-1, d-1);
 
-ChangeRows(myArray, r1, r2);
-*/
+Show2dArray(myArray);
 
-/*//Задача 2. Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. В случае, если это невозможно, программа должна вывести сообщение для пользователя.
+Console.WriteLine();
+//Задача 2. Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. В случае, если это невозможно, программа должна вывести сообщение для пользователя.
+int e = InputNumbers("Input a number of rows: ");
+int f = InputNumbers("Input a number of columns: ");
+int mini = InputNumbers("Input a min possible value: ");
+int maxi = InputNumbers("Input a max possible value: ");
 
-if (myArray.GetLength(0) != myArray.GetLength(1))
-    Console.WriteLine("Replacement impossible!");
+int[,] myMas = CreateRandom2DArray(e, f, mini, maxi);
+
+Show2dArray(myMas);
+
+Console.WriteLine();
+
+if (myMas.GetLength(0) != myMas.GetLength(1))
+{
+   Console.WriteLine("Replacement impossible!"); 
+}
 else
 {
     Console.WriteLine();
-    Replacement(myArray);
-    Show2dArray(myArray);
+    Replacement(myMas);
+    Show2dArray(myMas);
+
 }
-*/
 
-/*// Задача 3. Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен наименьший элемент.
+Console.WriteLine();
+// Задача 3. Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен наименьший элемент.
+int g = InputNumbers("Input a number of rows: ");
+int h = InputNumbers("Input a number of columns: ");
+int minimum = InputNumbers("Input a min possible value: ");
+int maximum = InputNumbers("Input a max possible value: ");
 
-int[,] myArray2 = DeleteRowAndColumn(myArray);
+int[,] myMassive = CreateRandom2DArray(e, f, mini, maxi);
 
-Show2dArray(myArray2);
-*/
+Show2dArray(myMassive);
+
+Console.WriteLine();
+
+int[,] myMassive2 = DeleteRowAndColumn(myMassive);
+
+Show2dArray(myMassive2);
+
+Console.WriteLine();

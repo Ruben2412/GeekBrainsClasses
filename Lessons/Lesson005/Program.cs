@@ -1,4 +1,11 @@
 ﻿//************************************************************************** Lesson 5 *********************************************************************************************//
+ int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
     int[] array = new int [size];
@@ -47,41 +54,56 @@ int[] Replace(int[] array)
     return array;
 }
 
-Console.Write("Input a number of elements: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+//Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. Найдите сумму отрицательных элементов.
+int a = InputNumbers("Input a number of elements: ");
+int min = InputNumbers("Input min possible value: ");
+int max = InputNumbers("Input max possible value: ");
 
-int[] myArray = CreateRandomArray(n, min, max);
+int[] myArray = CreateRandomArray(a, min, max);
+
+int negativeSum = FindNegativeSum(myArray);
+
 ShowArray(myArray);
 
-/*//Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. Найдите сумму отрицательных элементов.
-int negativeSum = FindNegativeSum(myArray);
 Console.WriteLine("Sum of negative elements is " + negativeSum);
-*/
-/*//Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
-Console.WriteLine(SameNumber(myArray, Number));
-*/
-/*//Задайте одномерный массив из m случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [a,b].
-Console.Write("Finding same number betwin a and b; Input A: ");
 
-int NumA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+int b = InputNumbers("Input a number of elements: ");
+int c = InputNumbers("Input a number for same number: ");
+int mini = InputNumbers("Input min possible value: ");
+int maxi = InputNumbers("Input max possible value: ");
 
-Console.Write("Input B: ");
+int[] myMas = CreateRandomArray(b, mini, maxi);
 
-int NumB = Convert.ToInt32(Console.ReadLine());
+ShowArray(myMas);
 
-Console.WriteLine($"We found {FindSumElements(myArray, NumA, NumB)} elements");
-*/
-/*//Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
-ShowArray(Replace(myArray));
-*/
+Console.WriteLine(SameNumber(myMas, c));
 
+Console.WriteLine();
+//Задайте одномерный массив из m случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [a,b].
+int d = InputNumbers("Input a number of elements: ");
+int f = InputNumbers("Input a number for same number: ");
+int minimum = InputNumbers("Input min possible value: ");
+int maximum = InputNumbers("Input max possible value: ");
+Console.Write("Finding same number betwin a and b: ");
+int g = InputNumbers("Input A: ");
+int h = InputNumbers("Input B: ");
 
+Console.WriteLine($"We found {FindSumElements(myArray, g, h)} elements");
 
+Console.WriteLine();
+//Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
 
+int i = InputNumbers("Input a number of elements: ");
+int j = InputNumbers("Input a number for same number: ");
+int down = InputNumbers("Input min possible value: ");
+int up = InputNumbers("Input max possible value: ");
 
+int[] myArr = CreateRandomArray(b, mini, maxi);
 
+ShowArray(myArr);
 
+ShowArray(Replace(myArr));
+
+Console.WriteLine();

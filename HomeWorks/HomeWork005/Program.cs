@@ -1,4 +1,11 @@
 ﻿//************************************************************************** HomeWork 5 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int[] CreateRandomArray(int size)
 {
     int[] array = new int [size];
@@ -25,12 +32,14 @@ void ShowArray(int[]array)
 {
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + "; ");
+    Console.WriteLine();
 }
 
 void ShowDoubleArray(double[] array)
 {
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + "; ");
+    Console.WriteLine();
 }
 
 void MinMax(double[] array)
@@ -44,8 +53,10 @@ for (int i = 0; i < array.Length; i++)
         max = array[i];
     if (array[i] < min)
         min = array[i];
+    
 }
-Console.WriteLine($"The difference between the maximum and minimum value is {max - min}");
+Console.WriteLine();
+Console.Write($"The difference between the maximum {max} and minimum {min} value is {max - min}");
 }
 
 int SumEvenNum(int[] array)
@@ -75,10 +86,8 @@ int SumOfOddNum(int[] array)
         return sum;
 }
 
-Console.Write("Enter the number of elements in the array: ");
-int n = Convert.ToInt32(Console.ReadLine());
-
-/*//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+int n = InputNumbers("Enter the number of elements in the array: ");
 
 int[] myArray = CreateRandomArray(n);
 
@@ -87,38 +96,42 @@ ShowArray(myArray);
 int Sum = SumEvenNum(myArray);
 
 Console.WriteLine("The found number of even numbers is " + Sum);
-*/
 
-/*//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+Console.WriteLine();
+//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 //Первый вариант
+int num = InputNumbers("Enter the number of elements in the array: ");
 
-int[] myArray = CreateSizeArray(n);
+int[] myMas = CreateSizeArray(num);
 
-ShowArray(myArray);
+ShowArray(myMas);
 
-int sumOddNum = SumOddNum(myArray);
+int sumOddNum = SumOddNum(myMas);
 
 Console.WriteLine("sum of odd array elementsis " + sumOddNum);
-*/
 
-/*//Второй вариант
+Console.WriteLine();
+//Второй вариант
+int number = InputNumbers("Enter the number of elements in the array: ");
 
-int[] myArray = CreateSizeArray(n);
+int[] myArr = CreateSizeArray(number);
 
-ShowArray(myArray);
+ShowArray(myArr);
 
-int sumOddNum = SumOfOddNum(myArray);
+int sumOfOddNum = SumOfOddNum(myArr);
 
-Console.WriteLine("sum of odd array elements is " + sumOddNum);
-*/
+Console.WriteLine("sum of odd array elements is " + sumOfOddNum);
 
-/*//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+Console.WriteLine();
+//Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+int integer = InputNumbers("Enter the number of elements in the array: ");
 
-double[] myArray = new double[n];
+double[] myMassiv = new double[integer];
 
-CreateDoubleRandomArray(myArray);
+CreateDoubleRandomArray(myMassiv);
 
-ShowDoubleArray(myArray);
+ShowDoubleArray(myMassiv);
 
-MinMax(myArray);
-*/
+MinMax(myMassiv);
+
+Console.WriteLine();

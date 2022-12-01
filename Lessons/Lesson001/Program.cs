@@ -1,47 +1,47 @@
 ﻿//************************************************************************** Lesson 1 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
 //Console.Write("Input a first number: ");
 //int n1 = Convert.ToInt32(Console.ReadLine());
-/*//Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
+//Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
+int a = InputNumbers("Input a first number: ");
+int b = InputNumbers("Input a second number: ");
 
-Console.Write("Input a first number: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a second number: ");
-int n2 = Convert.ToInt32(Console.ReadLine());
-
-int quad2 = n2 * n2;
-    if(n1 == quad2)
+int quad2 = b * b;
+    if(a * a == quad2)
         Console.WriteLine("Yes");
     else
         Console.WriteLine("No");
+
+Console.WriteLine();
 //при одноподчененным действии можно без скобок
-*/
-/*//Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
-Console.Write("Input a positive integer number: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
+//Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
+int c = InputNumbers("Input some number: ");
+int current = - c;
 
-int current = - n1;
-
-while(current <= n1)
+while(current <= c)
 {
     Console.Write(current + " ");
     current++;
 }
-*/
-/*//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
-//31625 % 10 = 5
-//31625 % 100 = 25
-//31625 % 1000 = 625
-//31625 % 10000 = 1625
+
+Console.WriteLine();
+//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа.
+//31625 % 10 = 5        //31625 / 10 = 3162
+
+//31625 % 100 = 25      //31625 / 100 = 316
+
+//31625 % 1000 = 625    //31625 / 1000 = 31
+
+//31625 % 10000 = 1625  //31625 / 10000= 3
+
 //31625 % 100000 = 31625
+int d = InputNumbers("Input some number: ");
+int result = d % 10;
+Console.WriteLine($"Lust digit of {d} is {result}");
 
-//31625 / 10 = 3162
-//31625 / 100 = 316
-//31625 / 1000 = 31
-//31625 / 10000= 3
-
-Console.Write("Input  a three digit number: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
-
-int result = n1 % 10;
-Console.WriteLine($"Lust digit of {n1} is {result}");
-*/
+Console.WriteLine();

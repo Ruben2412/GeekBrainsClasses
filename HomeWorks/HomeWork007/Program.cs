@@ -1,4 +1,11 @@
 ﻿//************************************************************************** HomeWork 7 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 double[,] Create2DDoubleArray(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -67,24 +74,20 @@ void ArithmetiSum( int[,] array )
     }
 }
 
-/*//Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-Console.Write("Input a number of rows: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int n = Convert.ToInt32(Console.ReadLine());
+//Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+int a = InputNumbers("Input a number of rows: ");
+int b = InputNumbers("Input a number of columns: ");
 
-double[,] myArray = new double[n, m];
+double[,] myArray = new double[a, b];
 
 Create2DDoubleArray(myArray);
 
 Show2DDoubleArray(myArray);
-*/
 
-/*//Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
-Console.Write("Input a number of rows: ");
-int w = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+int c = InputNumbers("Input a number of rows: ");
+int d = InputNumbers("Input a number of columns: ");
 
 int [,] integerArray = new int [10,10];
 
@@ -92,35 +95,32 @@ Create2DArray2(integerArray);
 
 Show2DIntegerArray(integerArray);
 
-FindNumber(w, x, integerArray);
-*/
+FindNumber(c, d, integerArray);
 
-/*//Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+Console.WriteLine();
+//Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 //Первый вариант
-Console.Write("Input a number of rows: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+int e = InputNumbers("Input a number of rows: ");
+int f = InputNumbers("Input a number of columns: ");
+int min = InputNumbers("Input a number of rows: ");
+int max = InputNumbers("Input a number of columns: ");
 
-int [,] integerArray = new int [m,n];
+int [,] myMas = new int [e,f];
 
-Create2DArray1(integerArray, max, min);
+Create2DArray1(myMas, max, min);
 
-Show2DIntegerArray(integerArray);
+Show2DIntegerArray(myMas);
 
-ArithmetiSum(integerArray);
-*/
+ArithmetiSum(myMas);
 
-/*//Второй вариант
-int [,] integerArray = new int [10,10];
+Console.WriteLine();
+//Второй вариант
+int [,] intArray = new int [10,10];
 
-Create2DArray2(integerArray);
+Create2DArray2(intArray);
 
-Show2DIntegerArray(integerArray);
+Show2DIntegerArray(intArray);
 
-ArithmetiSum(integerArray);
-*/
+ArithmetiSum(intArray);
+
+Console.WriteLine();

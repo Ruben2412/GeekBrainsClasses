@@ -1,4 +1,11 @@
 ﻿//************************************************************************** Lesson 3 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 void ShowRange1(int quart)
 {
     if(quart == 1)
@@ -51,6 +58,7 @@ int ShowRange3(int x, int y)
         return 0;
     }
 
+
 double Long(double x1, double y1, double x2, double y2)
 {
     double A = x1 - x2;
@@ -71,45 +79,42 @@ void Square(int n)
 
 }
 
-/*//Напишите программу, которая принимает на входчисло  обозначающее определеннный номер четверти на оси координат.
-Console.Weite("Input a number of quart: ");
-int quatNum = Convert.ToInt32(Console.ReadLine());
-*/
+//Напишите программу, которая принимает на входчисло обозначающее определеннный номер четверти на оси координат.
+//Первый вариант
+int a = InputNumbers("Input a number of quart ");
 
-/*//Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
-Console.WriteLine("Input X: ");
-int x = Convert.ToInt32(Console.ReadLine());
+ShowRange1(a);
 
-Console.WriteLine("Input Y: ");
-int y = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Второй вариант
+int b = InputNumbers("Input a number of quart ");
 
-int resolt = ShowRange(x, y);
+ShowRange2(b);
 
-Console.WriteLine(resolt);
-*/
+Console.WriteLine();
+//Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
+int c = InputNumbers("Input X: ");
+int d = InputNumbers("Input Y: ");
 
-/*//Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
-Console.WriteLine("Input X1:");
-double X1 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Input Y1:");
-double Y1 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Input X2:");
-double X2 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Input Y2:");
-double Y2 = Convert.ToInt32(Console.ReadLine());
-
-double resolt = Long(X1, Y1, X2, Y2);
+int resolt = ShowRange3(c, d);
 
 Console.WriteLine(resolt);
-*/
 
-/*//Напишите программу, которая принимает на вход число (N) и выводит квадраты чисел от 1 до N.
-Console.WriteLine("Input nuber:");
+Console.WriteLine();
+//Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+int a1 = InputNumbers("Input X1: ");
+int a2 = InputNumbers("Input X2: ");
+int b1 = InputNumbers("Input Y1: ");
+int b2 = InputNumbers("Input Y2: ");
 
-int n = Convert.ToInt32(Console.ReadLine());
+double res = Long(a1, b1, a2, b2);
 
-Square(n);
-*/
+Console.WriteLine(res);
+
+Console.WriteLine();
+//Напишите программу, которая принимает на вход число (N) и выводит квадраты чисел от 1 до N.
+int e = InputNumbers("Input nuber: ");
+
+Square(e);
+
+Console.WriteLine();

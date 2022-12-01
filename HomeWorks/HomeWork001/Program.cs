@@ -1,15 +1,22 @@
 ﻿//************************************************************************** HomeWork 1 *********************************************************************************************//
-void Max1( int x, int y)
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
+void Max1( int a, int b)
 {    
-    if (x>y)     
+    if (a>b)     
     {        
-        Console.WriteLine($"Max is {x}");        
-        Console.WriteLine($"Min is {y}");    
+        Console.WriteLine($"Max is {a}");        
+        Console.WriteLine($"Min is {b}");    
     }    
     else    
     {        
-        Console.WriteLine($"Max is {y}");        
-        Console.WriteLine($"Min is {x}");    
+        Console.WriteLine($"Max is {b}");        
+        Console.WriteLine($"Min is {a}");    
     }
 }
 
@@ -21,22 +28,22 @@ void Max2( int a, int b, int c)
     Console.WriteLine($"Max is {max}");  
 }
 
-void WhatNum(int num)
+void WhatNum(int n)
 {
-    if(num % 2 == 0)   
+    if(n % 2 == 0)   
     {        
-        Console.WriteLine($"число {num} является четным");    
+        Console.WriteLine($"число {n} является четным");    
     }
     else    
     {       
-        Console.WriteLine($"число {num} не является четным");   
+        Console.WriteLine($"число {n} не является четным");   
     }
 }
 
-void EverNum1(int N)
+void EverNum1(int n)
 {    
     int i = 1;    
-    while ( i <= N)        
+    while ( i <= n)        
     if (i % 2 == 0)        
     {                
         Console.WriteLine(i);            
@@ -46,63 +53,58 @@ void EverNum1(int N)
     i++;
 }
 
-void EverNum2(int N)
+void EverNum2(int n)
 {    
-    for (int i = 1; i <= N; i++)
-    if (i % 2 == 0)            
-    Console.WriteLine(i);
+    for (int i = 1; i <= n; i++)
+        if (i % 2 == 0)            
+            Console.Write(i + "; ");
+    Console.WriteLine();
 }
     
-void EverNum3(int N)
+void EverNum3(int n)
 {   
-    for (int i = 2; i <= N; i = i + 2)        
-        Console.WriteLine(i);
+    for (int i = 2; i <= n; i = i + 2)        
+        Console.Write( i+ "; ");
+    Console.WriteLine();
 }
 
-/*//Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-Console.WriteLine("Input a First number: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a Second number: ");
-int b = Convert.ToInt32(Console.ReadLine());
+//Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+int n1 = InputNumbers("Input a First number: ");
+int n2 = InputNumbers("Input a Second number: ");
 
-Max1(a, b);
-*/
+Max1(n1, n2);
 
-/*//Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-Console.WriteLine("Input a First number: ");
-int n1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a Second number: ");
-int n2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a Third number: ");
-int n3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+int num1 = InputNumbers("Input a First number: ");
+int num2 = InputNumbers("Input a Second number: ");
+int num3 = InputNumbers("Input a Third number: ");
 
-Max2(n1, n2,n3);
-*/
+Max2(num1, num2, num3);
 
-/*//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-Console.Write("Text some number: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+int number = InputNumbers("Input some number: ");
 
 WhatNum(number);
-*/
 
-/*//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+Console.WriteLine();
+//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 //Первая версия
-Console.Write("Input a positive integer number: ");
-int n = Convert.ToInt32(Console.ReadLine());
+int posint = InputNumbers("Input a positive integer number: ");
 
-EverNum1(n);
-*/
+EverNum1(posint);
 
-/*Вторая версия
-Console.Write("Input a positive integer number: ");
-int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Вторая версия
+int othposint = InputNumbers("Input a positive integer number: ");
 
-EverNum2(n);
-*/
+EverNum2(othposint);
 
-/*//Третья версия
-Console.Write("Input a positive integer number: ");
-int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Третья версия
+int anothposint = InputNumbers("Input a positive integer number: ");
 
-EverNum3(n);*/
+EverNum3(anothposint);
+
+Console.WriteLine();

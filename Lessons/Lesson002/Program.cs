@@ -1,11 +1,19 @@
 ﻿ //************************************************************************** Lesson 2 *********************************************************************************************//
- bool IsEven(int number)
+ int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+ 
+/*bool IsEven(int number)
 {
  if(number % 2 == 0)
     return true;
 else
     return false;
 }
+*/
 
 int CutNumber(int number)
 {
@@ -34,30 +42,28 @@ bool Square(int a, int b)
         return false;
 }
 
-/*//Способы отделить определенную часть числового значения
+//Способы отделить определенную часть числового значения
 int num = new Random().Next(100, 1000);
 
-int result = CutNumber(num);
+int res = CutNumber(num);
 
-Console.WriteLine($"New version of number {num} is {result}");
-*/
+Console.WriteLine($"New version of number {num} is {res}");
 
-/*//Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
-int num = new Random().Next(10, 100);
+Console.WriteLine();
+//Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
+int number = new Random().Next(10, 100);
 
-int result = MaxNumber(num);
+int result = MaxNumber(number);
 
-Console.WriteLine($"Max number of {num} is {result}");
-*/
+Console.WriteLine($"Max number of {number} is {result}");
 
-/*//Задача 2: Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого
+Console.WriteLine();
+//Задача 2: Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого
+int a = InputNumbers("Input a first number: ");
+int b = InputNumbers("Input a second number: ");
 
-Console.WriteLine("Введите Первую цифру: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите Вторую цифру: ");
-int b = Convert.ToInt32(Console.ReadLine());
+bool answer = Square(a,b);
 
-bool result = Square(a,b);
+Console.WriteLine($"It is your number {answer}");
 
-Console.WriteLine($"It is your number {result}");
-*/
+Console.WriteLine();

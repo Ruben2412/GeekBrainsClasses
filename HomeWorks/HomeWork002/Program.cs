@@ -1,8 +1,15 @@
 ﻿//************************************************************************** HomeWork 2 *********************************************************************************************//
-int CutNumb1(int numb)
+int InputNumbers(string input) 
 {
-    numb = (numb - ( numb / 100 ) * 100) / 10;
-    return numb;
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
+int CutNumb1(int n)
+{
+    n = (n - ( n / 100 ) * 100) / 10;
+    return n;
 }
 
 int TherdNum1(int n)
@@ -14,16 +21,15 @@ int TherdNum1(int n)
         }
     else
         {
-        n = 0;
-        Console.WriteLine($"Введенное число не является трех значным");
+        Console.Write($"Введенное число не является трех значным, ");
         return 0;
         }
 }    
 
-int CutNumb2(int numb)
+int CutNumb2(int n)
 {
-    numb = ( numb / 100 ) % 10;
-    return numb;
+    n = ( n / 100 ) % 10;
+    return n;
 }
 
 int TherdNum2(int n)
@@ -36,10 +42,18 @@ int TherdNum2(int n)
     else 
         {
         n = 0;
-        Console.WriteLine($"Введенное число не является трех значным");
+        Console.WriteLine($"Введенное число не является даже трех значным");
         return 0;
         }
 }    
+
+void Answer(int n, int m)
+{
+    if(m > 0)
+        Console.WriteLine($"Вторая цифра из {n} является {m}");
+    else
+        Console.WriteLine("Чтото пошло не так в следующий раз попробуем еще");
+}
 
 void CutNum3(int n)
 {
@@ -81,45 +95,48 @@ int DayNumb(int n)
         }
 }  
 
-/*//Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+//Задача 10:
+//Напишите программу, которая принимает на вход трёхзначное число
+//и на выходе показывает вторую цифру этого числа.
 //Первая версия
-Console.Write("Введите трех значное число: ");
-int N = Convert.ToInt32(Console.ReadLine());
+int thirdnumb = InputNumbers("Введите трех значное число и я определю в ней вторую цифру: ");
 
-int result = CutNumb1(N);
+int res = CutNumb1(thirdnumb);
 
-Console.WriteLine($"Second number from {N} is {result}");
-*/
+Console.WriteLine($"Вторая цифра из {thirdnumb} является {res}");
 
-/*//Вторая версия
-Console.Write("Введите трех значное число: ");
-int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Вторая версия
+int thirdnum = InputNumbers("Введите трех значное число и я определю в ней вторую цифру, только не ошибись в количестве: ");
 
-int result = CutNumb1(TherdNum1(N));
+int result = CutNumb1(TherdNum1(thirdnum));
 
-Console.WriteLine($"Вторая цифра из {N} is {result}");
-*/
+Answer(thirdnum, result);
 
-/*//Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+Console.WriteLine();
+//Задача 13:
+//Напишите программу, которая выводит третью цифру заданного числа
+//или сообщает, что третьей цифры нет.
 //Первая версия
-Console.Write("Введите число от трех знаков и больше: ");
-int N = Convert.ToInt32(Console.ReadLine());
+int thirdinteger = InputNumbers("Введите число от трех знаков, только не ошибись в количестве: ");
 
-int result = CutNumb2(TherdNum2(N));
+int answer = CutNumb2(TherdNum2(thirdinteger));
 
-Console.WriteLine($"Третья цифра из {N} is {result}");
-*/
+Console.WriteLine($"Вторая цифра из {thirdinteger} является {answer}");
 
-/*//Вторая версия
-Console.Write("Введите число от трех знаков и больше: ");
-int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Вторая версия
+int thirdint = InputNumbers("Введите число от трех знаков, только не ошибись в количестве: ");
 
-CutNum3(TherdNum2(N));
-*/
+CutNum3(TherdNum2(thirdint));
 
-/*//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-Console.WriteLine("Введите день недели в виде цифры: ");
-int N = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Задача 15:
+//Напишите программу, которая принимает на вход цифру,
+//обозначающую день недели, и проверяет,
+//является ли этот день выходным.
+int morethirdnum = InputNumbers("Введите день недели ввиде числа: ");
 
-DayNumb(N);
-*/
+DayNumb(morethirdnum);
+
+Console.WriteLine();

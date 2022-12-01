@@ -1,4 +1,18 @@
 ﻿//************************************************************************** HomeWork 6 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
+double InputDoubleNumbers(string input) 
+{
+  Console.Write(input);
+  double output = Convert.ToDouble(Console.ReadLine());
+  return output;
+}
+
 void PosNum(int number)
 {
     int count = 0;
@@ -54,28 +68,24 @@ void XY2(double[] array)
     Console.WriteLine($"Two straight lines will intersect at a point with coordinates X: {x}, Y: {y}");
 }
 
-/*//Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
-Console.Write("Enter the total number of numbers: ");
+//Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+int n = InputNumbers("Enter the total number of numbers: ");
 
-int M = Convert.ToInt32(Console.ReadLine());
+PosNum(n);
 
-PosNum(M);*/
-
-/*//Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+Console.WriteLine();
+//Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 //Первый вариант
-Console.WriteLine("Input b1");
-double b1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input k1");
-double k1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input b2");
-double b2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input k2");
-double k2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Задайте 4 координаты");
+double b1 = InputDoubleNumbers("Enter the total number of b1: ");
+double k1 = InputDoubleNumbers("Enter the total number of k1: ");
+double b2 = InputDoubleNumbers("Enter the total number of b2: ");
+double k2 = InputDoubleNumbers("Enter the total number of k2: ");
 
 XY1(b1, k1, b2, k2);
-*/
 
-/*//Второй варивнт
+Console.WriteLine();
+//Второй варивнт
 Console.WriteLine("If you ready enter random number: ");
 
 int num = 4;
@@ -87,4 +97,5 @@ CreateFourNumberArray(myArray);
 ShowDoubleArray(myArray);
 
 XY2(myArray);
-*/
+
+Console.WriteLine();

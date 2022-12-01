@@ -1,4 +1,11 @@
 ﻿//************************************************************************** HomeWork 8 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int[,] CreateRandom2DArray(int rows, int columns, int minvalue, int maxvalue)
 {
     int[,] array = new int[rows, columns];
@@ -151,82 +158,69 @@ void MultiplyArray(int[,] firstArray, int[,] secondArray, int[,] resultArray)
 }
 
 //Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
-/*//Первый Вариант
-Console.Write("Input a number of rows: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+//Первый Вариант
+int a= InputNumbers("Input a number of rows: ");
+int b = InputNumbers("Input a number of columns: ");
+int min = InputNumbers("Input a number of rows: ");
+int max = InputNumbers("Input a number of columns: ");
 
-int[,] myArray = CreateRandom2DArray(m, n, min, max);
+int[,] myArray = CreateRandom2DArray(a, b, min, max);
 
 Show2DArray(myArray);
 
 FromMaxToMin(myArray);
 
 Show2DArray(myArray);
-*/
 
-/*//Второй Вариант
-int[,] myArray = new int[4, 4];
+Console.WriteLine();
+//Второй Вариант
+int[,] myMas = new int[4, 4];
 
-CreateRandom2DMas(myArray);
+CreateRandom2DMas(myMas);
 
-Show2DArray(myArray);
+Show2DArray(myMas);
 
-FromMaxToMin(myArray);
+FromMaxToMin(myMas);
 
-Show2DArray(myArray);
-*/
+Show2DArray(myMas);
 
+Console.WriteLine();
 //Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
-/*//Первый Вариант
-Console.Write("Input a number of rows: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+//Первый Вариант
+int c = InputNumbers("Input a number of rows: ");
+int d = InputNumbers("Input a number of columns: ");
+int minimum = InputNumbers("Input a number of rows: ");
+int maxaximum = InputNumbers("Input a number of columns: ");
 
-int[,] myArray = CreateRandom2DArray(m, n, min, max);
+int[,] myArr = CreateRandom2DArray(c, d, min, max);
 
-Show2DArray(myArray);
+Show2DArray(myArr);
 
-TheMinSumRow(myArray);
-*/
+TheMinSumRow(myArr);
 
-/*//Второй Вариант
-int[,] myArray = new int[4, 4];
+Console.WriteLine();
+//Второй Вариант
+int[,] myMassiv = new int[4, 4];
 
-CreateRandom2DMas(myArray);
+CreateRandom2DMas(myMassiv);
 
-Show2DArray(myArray);
+Show2DArray(myMassiv);
 
-TheMinSumRow(myArray);
-*/
+TheMinSumRow(myMassiv);
 
+Console.WriteLine();
 //Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-/*//Первый Вариант
-Console.WriteLine("Enter the borders of two array");
-Console.Write("Input a number of rows: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a number of columns: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+//Первый Вариант
+int e = InputNumbers("Input a number of rows: ");
+int f = InputNumbers("Input a number of columns: ");
+int down = InputNumbers("Input a number of rows: ");
+int up = InputNumbers("Input a number of columns: ");
 
-int[,] myFirstMas = CreateRandom2DArray(m, n, min, max);
+int[,] myFirstMas = CreateRandom2DArray(e, f, down, up);
 
-int[,] mySecondMas = CreateRandom2DArray(m, n, min, max);
+int[,] mySecondMas = CreateRandom2DArray(e, f, down, up);
 
-int[,] resultMas = new int[m,n];
+int[,] resultMas = new int[e,f];
 
 Show2DArray(myFirstMas);
 
@@ -237,61 +231,58 @@ MultiplyArray(myFirstMas, mySecondMas, resultMas);
 Console.WriteLine($"The multiply of the first array and second array::");
 
 Show2DArray(resultMas);
-*/
 
-/*//Второй Вариант
-int[,] myFirstMas = new int[4, 4];
+Console.WriteLine();
+//Второй Вариант
+int[,] myFirstArr = new int[4, 4];
 
-CreateRandom2DMas(myFirstMas);
+CreateRandom2DMas(myFirstArr);
 
-int[,] mySecondMas = new int[4, 4];
+int[,] mySecondArr = new int[4, 4];
 
-CreateRandom2DMas(mySecondMas);
+CreateRandom2DMas(mySecondArr);
 
-int[,] resultMas = new int[4,4];
+int[,] resultArr = new int[4,4];
 
-Show2DArray(myFirstMas);
+Show2DArray(myFirstArr);
 
-Show2DArray(mySecondMas);
+Show2DArray(mySecondArr);
 
-MultiplyArray(myFirstMas, mySecondMas, resultMas);
+MultiplyArray(myFirstArr, mySecondArr, resultArr);
 
 Console.WriteLine($"The multiply of the first array and second array::");
 
-Show2DArray(resultMas);
-*/
+Show2DArray(resultArr);
 
+Console.WriteLine();
 //Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
-/*//Первый Вариант
+//Первый Вариант
 Console.WriteLine("Enter the borders of three array but not biger integer 4");
 Console.Write("Input a size of first array: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a size of second array: ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a size of third array: ");
-int c = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+int g = InputNumbers("Input a number of rows: ");
+int h = InputNumbers("Input a number of columns: ");
+int i = InputNumbers("Input a number of district: ");
+int downer = InputNumbers("Input a number of rows: ");
+int uper = InputNumbers("Input a number of columns: ");
 
-int[,,] testArray = new int[a, b, c];
+int[,,] testArray = new int[g, h, i];
 
-CreateRandom3DArray(testArray, min, max);
+CreateRandom3DArray(testArray, downer, uper);
 
 Show3DArray(testArray);
-*/
 
-/*//Второй Вариант
-int a = 4;
-int b = 4;
-int c = 4;
-int min= 10;
-int max= 99;
+Console.WriteLine();
+//Второй Вариант
+int j = 4;
+int k = 4;
+int l = 4;
+int mini= 10;
+int maxi= 99;
 
-int[,,] testArray = new int[a, b, c];
+int[,,] testMas = new int[j, k, l];
 
-CreateRandom3DArray(testArray, min, max);
+CreateRandom3DArray(testMas, mini, maxi);
 
-Show3DArray(testArray);
-*/
+Show3DArray(testMas);
+
+Console.WriteLine();

@@ -1,4 +1,11 @@
 ﻿//************************************************************************** Lesson 4 *********************************************************************************************//
+ int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int FindSum(int number)
 {
     int sum = 0;
@@ -27,17 +34,21 @@ int Multiplier(int integer)
     return multiplier;
 } 
 
-Console.Write("Input the nuber: ");
-int num = Convert.ToInt32(Console.ReadLine());
+//Найти сумму числе включая введенное значение
+int a = InputNumbers("Input the nuber: ");
 
-/*//Найти сумму числе включая введенное значение
-Console.WriteLine($"Sum of numbers between 1 and {num} is {FindSum(num)}");
-*/
+Console.WriteLine($"Sum of numbers between 1 and {a} is {FindSum(a)}");
 
-/*//Найти количество чисел в введенном значении
-Console.WriteLine($"Sum of pices of numbers in {num} is {HowMany(num)}");
-*/
+Console.WriteLine();
+//Найти количество чисел в введенном значении
+int b = InputNumbers("Input the nuber: ");
 
-/*//Найти произведение всех чисел включая введенное значение
-Console.WriteLine($"Product of number {num} is {Multiplier(num)}");
-*/
+Console.WriteLine($"Sum of pices of numbers in {b} is {HowMany(b)}");
+
+Console.WriteLine();
+//Найти произведение всех чисел включая введенное значение
+int c = InputNumbers("Input the nuber: ");
+
+Console.WriteLine($"Product of number {c} is {Multiplier(c)}");
+
+Console.WriteLine();

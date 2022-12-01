@@ -39,28 +39,27 @@ double PowNumbers(double a, double b)
     return 1;
 }
 
-/*//Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от 1 до N.
-int n = InputNumbers("Enter some number: ");
-
-ShowNumbers(n);
-*/
-
-/*//Напишите программу, которая будет принимать на вход число и возвращать сумму его цифр.
-int n = InputNumbers("Enter some number: ");
-
-Console.WriteLine(SumOfDigits(n));
-*/
-
-/*//Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
-int m = InputNumbers("Enter some number: ");
-int n = InputNumbers("Enter another number: ");
-
-PrintNumbers(n, m);
-*/
-
-/*//Напишите программу, которая на вход принимает два числа A и B, и возводит число А в целую степень B.
+//Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от 1 до N.
 int a = InputNumbers("Enter some number: ");
-int b = InputNumbers("Enter another number: ");
 
-Console.WriteLine(PowNumbers(a, b));
-*/
+ShowNumbers(a);
+
+Console.WriteLine();
+//Напишите программу, которая будет принимать на вход число и возвращать сумму его цифр.
+int b = InputNumbers("Enter some number: ");
+
+Console.WriteLine(SumOfDigits(b));
+
+Console.WriteLine();
+//Задайте значения M и N. Напишите программу, которая выведет все натуральные числа в промежутке от M до N.
+int c = InputNumbers("Enter some number: ");
+int d = InputNumbers("Enter another number: ");
+
+PrintNumbers(c, d);
+
+Console.WriteLine();
+//Напишите программу, которая на вход принимает два числа A и B, и возводит число А в целую степень B.
+int e = InputNumbers("Enter some number: ");
+int f = InputNumbers("Enter another number: ");
+
+Console.WriteLine(PowNumbers(e, f));

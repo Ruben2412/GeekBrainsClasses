@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj": {}
+    "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj": {}
   },
   "projects": {
-    "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj": {
+    "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj",
+        "projectUniqueName": "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj",
         "projectName": "HomeWork007",
-        "projectPath": "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj",
+        "projectPath": "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\HomeWork007.csproj",
         "packagesPath": "C:\\Users\\ilove\\.nuget\\packages\\",
-        "outputPath": "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\obj\\",
+        "outputPath": "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork007\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ilove\\AppData\\Roaming\\NuGet\\NuGet.Config"

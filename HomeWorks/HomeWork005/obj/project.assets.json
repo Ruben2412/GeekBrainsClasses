@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork005\\HomeWork005.csproj",
+      "projectUniqueName": "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork005\\HomeWork005.csproj",
       "projectName": "HomeWork005",
-      "projectPath": "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork005\\HomeWork005.csproj",
+      "projectPath": "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork005\\HomeWork005.csproj",
       "packagesPath": "C:\\Users\\ilove\\.nuget\\packages\\",
-      "outputPath": "D:\\GeekBrainsClasses\\HomeWorks\\HomeWork005\\obj\\",
+      "outputPath": "D:\\IT\\GeekBrainsClasses\\HomeWorks\\HomeWork005\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ilove\\AppData\\Roaming\\NuGet\\NuGet.Config"

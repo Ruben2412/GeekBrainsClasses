@@ -1,4 +1,11 @@
 ﻿//************************************************************************** HomeWork 4 *********************************************************************************************//
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
+
 int Degree(int a, int b)
 {
     int degree = 1;
@@ -49,50 +56,45 @@ for(int i = 0; i< array.Length; i++)
     Console.Write(array[i] + "; ");
 }
 
-/*//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+//Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 Console.WriteLine("Enter two numbers. The second number will become a power for the first");
-Console.Write("Input a First number: ");
-int FN = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a Second number: ");
-int SN = Convert.ToInt32(Console.ReadLine());
+int n1 = InputNumbers("Input a First number: ");
+int n2= InputNumbers("Input a Second number: ");
 
-Console.WriteLine($"Output: {Degree(FN, SN)}");
-*/
+int result = Degree(n1, n2);
 
-/*//Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-Console.WriteLine("Input nuber and enter no more than 10 digits:");
+Console.WriteLine($"Output: {result}");
 
-int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+//Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+int number = InputNumbers("Input nuber and enter no more than 10 digits: ");
 
 Console.WriteLine($"Your Sums of all number is {SumNum(number)}");
-*/
 
-/*//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+Console.WriteLine();
+//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 //Вариант 1 проходили на лекции
 Console.WriteLine("An array will be created with the length of the entered number in the range from zero to a number");
-Console.Write("Input number: ");
-
-int enterNumber = Convert.ToInt32(Console.ReadLine());
+int enterNumber = InputNumbers("Input number: ");
 
 CreateRandomArray(enterNumber);
-*/
 
-/*// Вариант 2 такой вариант я нашел 
-Console.Write("Enter the length of the array: ");
+Console.WriteLine();
+// Вариант 2 такой вариант я нашел 
+int inPutNumber = InputNumbers("Input number: ");
 
-int enterNumber = Convert.ToInt32(Console.ReadLine());
-
-int[] myArray = CreateSpecialyArray(enterNumber);
+int[] myArray = CreateSpecialyArray(inPutNumber);
 
 ShowArray(myArray);
-*/
 
-/*//Вариант 3 так я понял задачу
+Console.WriteLine();
+//Вариант 3 так я понял задачу
 Console.WriteLine("Enter eight elements in your array ");
 
-int enterNumber = 8;
+int enterNum = 8;
 
-int[] myArray = CreateSpecialyArray(enterNumber);
+int[] myMas = CreateSpecialyArray(enterNum);
 
-ShowArray(myArray);
-*/
+ShowArray(myMas);
+
+Console.WriteLine();
