@@ -1,31 +1,33 @@
 ﻿//************************************************************************** Lesson 8 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 void ShowNumbers(int n)
 {
-    if(n > 1) ShowNumbers(n - 1);
+    if (n > 1) ShowNumbers(n - 1);
     Console.Write(n + " ");
 }
 
 double SumOfDigits(int num)
 {
-    if(num != 0) return SumOfDigits(num / 10) + num % 10;
+    if (num != 0) return SumOfDigits(num / 10) + num % 10;
     return 0;
 }
 
 void PrintNumbers(int a, int b)
 {
-    if(a > b)
-    {   PrintNumbers(a - 1, b);
+    if (a > b)
+    {
+        PrintNumbers(a - 1, b);
         Console.Write(a + " ");
     }
     else
-    {   if(b > a) PrintNumbers(b - 1, a);
+    {
+        if (b > a) PrintNumbers(b - 1, a);
         Console.Write(b + " ");
     }
 }

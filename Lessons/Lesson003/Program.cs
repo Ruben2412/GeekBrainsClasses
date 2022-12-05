@@ -1,14 +1,14 @@
 ﻿//************************************************************************** Lesson 3 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 void ShowRange1(int quart)
 {
-    if(quart == 1)
+    if (quart == 1)
         Console.WriteLine("x > 0 and y > 0");
     else if (quart == 2)
         Console.WriteLine("x < 0 and y > 0");
@@ -17,46 +17,46 @@ void ShowRange1(int quart)
     else if (quart == 4)
         Console.WriteLine("x > 0 and y < 0");
     else
-       Console.WriteLine("Wrong number!");
+        Console.WriteLine("Wrong number!");
 }
 
 void ShowRange2(int quart)
 {
-    if(quart == 1)
+    if (quart == 1)
     {
         Console.WriteLine("x > 0 and y > 0");
-    }    
-        else if (quart == 2)
-        {  
-            Console.WriteLine("x < 0 and y > 0");
-        } 
-            else if (quart == 3)
-            {    
-                Console.WriteLine("x < 0 and y < 0");
-            }    
-                else if (quart == 4)
-                {
-                    Console.WriteLine("x > 0 and y < 0");
-                }
-                    else
-                    {
-                    Console.WriteLine("Wrong number!");
-                    }
+    }
+    else if (quart == 2)
+    {
+        Console.WriteLine("x < 0 and y > 0");
+    }
+    else if (quart == 3)
+    {
+        Console.WriteLine("x < 0 and y < 0");
+    }
+    else if (quart == 4)
+    {
+        Console.WriteLine("x > 0 and y < 0");
+    }
+    else
+    {
+        Console.WriteLine("Wrong number!");
+    }
 }
 
 int ShowRange3(int x, int y)
-    {
-    if( x > 0 && y > 0)
+{
+    if (x > 0 && y > 0)
         return 1;
-    else if( x < 0 && y > 0)
+    else if (x < 0 && y > 0)
         return 2;
-    else if( x < 0 && y < 0)
+    else if (x < 0 && y < 0)
         return 3;
-    else if( x > 0 && y <0 )
+    else if (x > 0 && y < 0)
         return 4;
     else
         return 0;
-    }
+}
 
 
 double Long(double x1, double y1, double x2, double y2)
@@ -70,7 +70,7 @@ double Long(double x1, double y1, double x2, double y2)
 void Square(int n)
 {
     int i = 1;
-    while(i < n + 1)
+    while (i < n + 1)
     {
         int courent = i * i;
         Console.WriteLine(courent);

@@ -20,64 +20,64 @@ int[] a = {0, 6, 2};
 ShowNum(a);
 Console.WriteLine(a[0]);
 */
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
-    int[] array = new int [size];
+    int[] array = new int[size];
 
-    for( int i = 0; i < size; i++)
-        array[i] = new Random().Next(minValue, maxValue +1);
-    
+    for (int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
+
     return array;
 }
 
 int[] CloneArray(int[] array)
 {
-    int[] newArray = new int [array.Length];
+    int[] newArray = new int[array.Length];
 
-    for( int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
         newArray[i] = array[i];
-    
+
     return newArray;
 }
 
-void ShowArray(int[]array)
+void ShowArray(int[] array)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
         Console.Write(array[i] + "; ");
-    
+
     Console.WriteLine();
 }
 
-void ReplaceArray(int[]array)
+void ReplaceArray(int[] array)
 {
-    for(int i = 0; i < array.Length / 2 ; i++)
+    for (int i = 0; i < array.Length / 2; i++)
     {
         int temp = array[i];
         array[i] = array[array.Length - 1 - i];
-        array[array.Length - 1 - i] = temp; 
+        array[array.Length - 1 - i] = temp;
     }
 }
 
-void ReverseArray(int[]array)
+void ReverseArray(int[] array)
 {
-    for(int i = 0, j = array.Length - 1; i < j ; i++, j--)
+    for (int i = 0, j = array.Length - 1; i < j; i++, j--)
     {
         int temp = array[i];
         array[i] = array[j];
-        array[j] = temp; 
+        array[j] = temp;
     }
 }
 
-bool Triangle(int a , int b, int c)
+bool Triangle(int a, int b, int c)
 {
-    if( a + b > c && c + b > a && a + c > b)
+    if (a + b > c && c + b > a && a + c > b)
     {
         return true;
     }
@@ -89,10 +89,10 @@ bool Triangle(int a , int b, int c)
 
 int[] Fibonacci(int a, int b, int size)
 {
-    int[] array = new int [size];
+    int[] array = new int[size];
     array[0] = a;
     array[1] = b;
-    for(int i = 2; i < array.Length; i++)
+    for (int i = 2; i < array.Length; i++)
     {
         array[i] = array[i - 1] + array[i - 2];
     }
@@ -122,7 +122,7 @@ int b = InputNumbers("Input first number: ");
 int c = InputNumbers("Input second number: ");
 int d = InputNumbers("Input third number: ");
 
-bool result = Triangle(a , b , c);
+bool result = Triangle(a, b, c);
 
 Console.WriteLine(result);
 

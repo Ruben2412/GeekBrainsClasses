@@ -1,22 +1,22 @@
 ﻿//************************************************************************** Lesson 5 *********************************************************************************************//
- int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
-    int[] array = new int [size];
-    for( int i = 0; i < size; i++)
-        array[i] = new Random().Next(minValue, maxValue +1);
+    int[] array = new int[size];
+    for (int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
     return array;
 }
 
-void ShowArray(int[]array)
+void ShowArray(int[] array)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
         Console.Write(array[i] + "; ");
     Console.WriteLine();
 }
@@ -24,16 +24,16 @@ void ShowArray(int[]array)
 int FindNegativeSum(int[] array)
 {
     int sum = 0;
-    for(int i = 0; i < array.Length; i++)
-        if(array[i] < 0)
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] < 0)
             sum += array[i];
-        return sum;
+    return sum;
 }
 
 bool SameNumber(int[] array, int a)
 {
-    for(int i = 0; i < array.Length; i++)
-        if(array[i] == a)
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] == a)
             return true;
     return false;
 }
@@ -41,15 +41,15 @@ bool SameNumber(int[] array, int a)
 int FindSumElements(int[] array, int a, int b)
 {
     int count = 0;
-    for(int i = 0; i < array.Length; i++)
-        if(array[i] >= a && b >= array[i])
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] >= a && b >= array[i])
             count++;
     return count;
 }
 
 int[] Replace(int[] array)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
         array[i] *= -1;
     return array;
 }

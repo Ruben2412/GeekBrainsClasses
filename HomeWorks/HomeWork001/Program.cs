@@ -1,70 +1,70 @@
 ﻿//************************************************************************** HomeWork 1 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
-void Max1( int a, int b)
-{    
-    if (a>b)     
-    {        
-        Console.WriteLine($"Max is {a}");        
-        Console.WriteLine($"Min is {b}");    
-    }    
-    else    
-    {        
-        Console.WriteLine($"Max is {b}");        
-        Console.WriteLine($"Min is {a}");    
+void Max1(int a, int b)
+{
+    if (a > b)
+    {
+        Console.WriteLine($"Max is {a}");
+        Console.WriteLine($"Min is {b}");
+    }
+    else
+    {
+        Console.WriteLine($"Max is {b}");
+        Console.WriteLine($"Min is {a}");
     }
 }
 
-void Max2( int a, int b, int c)
-{    
-    int max=a;    
-    if(b>max) max=b;    
-    if(c>max) max=c;    
-    Console.WriteLine($"Max is {max}");  
+void Max2(int a, int b, int c)
+{
+    int max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+    Console.WriteLine($"Max is {max}");
 }
 
 void WhatNum(int n)
 {
-    if(n % 2 == 0)   
-    {        
-        Console.WriteLine($"число {n} является четным");    
+    if (n % 2 == 0)
+    {
+        Console.WriteLine($"число {n} является четным");
     }
-    else    
-    {       
-        Console.WriteLine($"число {n} не является четным");   
+    else
+    {
+        Console.WriteLine($"число {n} не является четным");
     }
 }
 
 void EverNum1(int n)
-{    
-    int i = 1;    
-    while ( i <= n)        
-    if (i % 2 == 0)        
-    {                
-        Console.WriteLine(i);            
-        i++;        
-    }           
-    else            
-    i++;
+{
+    int i = 1;
+    while (i <= n)
+        if (i % 2 == 0)
+        {
+            Console.WriteLine(i);
+            i++;
+        }
+        else
+            i++;
 }
 
 void EverNum2(int n)
-{    
+{
     for (int i = 1; i <= n; i++)
-        if (i % 2 == 0)            
+        if (i % 2 == 0)
             Console.Write(i + "; ");
     Console.WriteLine();
 }
-    
+
 void EverNum3(int n)
-{   
-    for (int i = 2; i <= n; i = i + 2)        
-        Console.Write( i+ "; ");
+{
+    for (int i = 2; i <= n; i = i + 2)
+        Console.Write(i + "; ");
     Console.WriteLine();
 }
 

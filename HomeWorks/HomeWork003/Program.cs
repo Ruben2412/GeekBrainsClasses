@@ -1,22 +1,22 @@
 ﻿//************************************************************************** HomeWork 3 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
-string InputStrings(string input) 
+string InputText(string input)
 {
-  Console.Write(input);
-  string output = Console.ReadLine();
-  return output;
+    Console.Write(input);
+    string output = Console.ReadLine();
+    return output;
 }
 
 void Polindrom(string n)
 {
     int i = n.Length;
-    if(i == 5)
+    if (i == 5)
     {
         if (n[0] == n[4] && n[1] == n[3])
             Console.WriteLine($"{n} - Палиндром");
@@ -44,12 +44,12 @@ double Long(double x1, double y1, double z1, double x2, double y2, double z2)
     double C = z1 - z2;
     double D = A * A + B * B + C * C;
     return Math.Sqrt(D);
-} 
+}
 
 void Cube(int n)
 {
     int i = 1;
-    while(i < n + 1)
+    while (i < n + 1)
     {
         int courent = i * i * i;
         i++;
@@ -58,13 +58,13 @@ void Cube(int n)
 
 //Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 //Первый вариант
-string polind = InputStrings("Введите пятизначный Палиндром: ");
+string polind = InputText("Введите пятизначный Палиндром: ");
 
 Polindrom(polind);
 
 Console.WriteLine();
 //Второй вариант
-string letter = InputStrings("Введите пятизначный Палиндром: ");
+string letter = InputText("Введите пятизначный Палиндром: ");
 
 char[] mass = letter.ToCharArray();
 {
@@ -73,7 +73,6 @@ char[] mass = letter.ToCharArray();
     else
         Console.WriteLine("NOT POLINDROME");
 }
-
 //Задача 21 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 int x1 = InputNumbers("Input X1: ");
 int y1 = InputNumbers("Input Y1: ");

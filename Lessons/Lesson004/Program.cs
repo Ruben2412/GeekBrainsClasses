@@ -1,15 +1,15 @@
 ﻿//************************************************************************** Lesson 4 *********************************************************************************************//
- int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 int FindSum(int number)
 {
     int sum = 0;
-    for(int current = 1; current<= number; current++)
+    for (int current = 1; current <= number; current++)
         sum += current;
     return sum;
 
@@ -18,7 +18,7 @@ int FindSum(int number)
 int HowMany(int num)
 {
     int digit = 0;
-    while(num != 0)
+    while (num != 0)
     {
         num /= 10;
         digit++;
@@ -29,10 +29,10 @@ int HowMany(int num)
 int Multiplier(int integer)
 {
     int multiplier = 1;
-    for(int i = 1; i <= integer; i++)
+    for (int i = 1; i <= integer; i++)
         multiplier *= i;
     return multiplier;
-} 
+}
 
 //Найти сумму числе включая введенное значение
 int a = InputNumbers("Input the nuber: ");

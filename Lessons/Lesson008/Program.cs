@@ -1,9 +1,9 @@
 ﻿//************************************************************************** Lesson 8 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 int[,] CreateRandom2DArray(int rows, int columns, int minvalue, int maxvalue)
@@ -43,7 +43,7 @@ void ChangeRows(int[,] array, int row1, int row2)
             array[row1, j] = array[row2, j];
             array[row2, j] = temp;
         }
-    Console.WriteLine();    
+        Console.WriteLine();
     }
     else Console.WriteLine("Incorrect rows  for changing!");
 }
@@ -112,7 +112,7 @@ int[,] myArray = CreateRandom2DArray(a, b, min, max);
 
 Show2dArray(myArray);
 
-ChangeRows(myArray, c-1, d-1);
+ChangeRows(myArray, c - 1, d - 1);
 
 Show2dArray(myArray);
 
@@ -131,7 +131,7 @@ Console.WriteLine();
 
 if (myMas.GetLength(0) != myMas.GetLength(1))
 {
-   Console.WriteLine("Replacement impossible!"); 
+    Console.WriteLine("Replacement impossible!");
 }
 else
 {

@@ -1,9 +1,9 @@
 ﻿//************************************************************************** HomeWork 7 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 double[,] Create2DDoubleArray(double[,] array)
@@ -16,18 +16,18 @@ double[,] Create2DDoubleArray(double[,] array)
 
 int[,] Create2DArray1(int[,] array, int maxValue, int minValue)
 {
-    for (int i = 0; i < array.GetLength(0); i++)    
+    for (int i = 0; i < array.GetLength(0); i++)
         for (int j = 0; j < array.GetLength(1); j++)
-            array [i,j] = new Random().Next(minValue, maxValue + 1); 
-    return array;    
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
+    return array;
 }
 
 int[,] Create2DArray2(int[,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)    
+    for (int i = 0; i < array.GetLength(0); i++)
         for (int j = 0; j < array.GetLength(1); j++)
-            array [i,j] = new Random().Next(-100, 100); 
-    return array;    
+            array[i, j] = new Random().Next(-100, 100);
+    return array;
 }
 
 void Show2DDoubleArray(double[,] array)
@@ -55,19 +55,19 @@ void Show2DIntegerArray(int[,] array)
 void FindNumber(int a, int b, int[,] array)
 {
     if (a <= array.GetLength(0) && b <= array.GetLength(1))
-        Console.WriteLine($"значение элемента {a} строки и {b} столбца равно {array[a-1,b-1]}");
+        Console.WriteLine($"значение элемента {a} строки и {b} столбца равно {array[a - 1, b - 1]}");
     else
         Console.WriteLine("there is no such element");
 }
 
-void ArithmetiSum( int[,] array )
+void ArithmetiSum(int[,] array)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
         double avarage = 0;
         for (int i = 0; i < array.GetLength(0); i++)
         {
-            avarage = (avarage + array[i,j]);
+            avarage = (avarage + array[i, j]);
         }
         avarage = avarage / array.GetLength(0);
         Console.Write(avarage + "; ");
@@ -89,7 +89,7 @@ Console.WriteLine();
 int c = InputNumbers("Input a number of rows: ");
 int d = InputNumbers("Input a number of columns: ");
 
-int [,] integerArray = new int [10,10];
+int[,] integerArray = new int[10, 10];
 
 Create2DArray2(integerArray);
 
@@ -105,7 +105,7 @@ int f = InputNumbers("Input a number of columns: ");
 int min = InputNumbers("Input a number of rows: ");
 int max = InputNumbers("Input a number of columns: ");
 
-int [,] myMas = new int [e,f];
+int[,] myMas = new int[e, f];
 
 Create2DArray1(myMas, max, min);
 
@@ -115,7 +115,7 @@ ArithmetiSum(myMas);
 
 Console.WriteLine();
 //Второй вариант
-int [,] intArray = new int [10,10];
+int[,] intArray = new int[10, 10];
 
 Create2DArray2(intArray);
 

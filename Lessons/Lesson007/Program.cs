@@ -5,22 +5,22 @@ int b = InputNumbers("Input a number of columns: ");
 int min = InputNumbers("Input min possible value: ");
 int max = InputNumbers("Input max possible value: ");
 */
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
-int[,] Create2DRandomArray(int rows,int columns, int minValue, int maxValue)
+int[,] Create2DRandomArray(int rows, int columns, int minValue, int maxValue)
 {
-    int[,] array = new int [rows,columns];
+    int[,] array = new int[rows, columns];
 
-    for(int i = 0; i < rows; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for(int j = 0; j < columns; j++)
+        for (int j = 0; j < columns; j++)
         {
-            array[i,j] = new Random().Next(minValue, maxValue + 1);
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
         }
     }
 
@@ -29,24 +29,24 @@ int[,] Create2DRandomArray(int rows,int columns, int minValue, int maxValue)
 
 void Show2DArray(int[,] array)
 {
-    for( int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
-            Console.Write($"[{array[i,j]}] ");
-    
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write($"[{array[i, j]}] ");
+
         Console.WriteLine();
     }
 }
 
-int[,] Create2DRandomMas(int rows,int columns)
+int[,] Create2DRandomMas(int rows, int columns)
 {
-    int[,] array = new int [rows,columns];
+    int[,] array = new int[rows, columns];
 
-    for(int i = 0; i < rows; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for(int j = 0; j < columns; j++)
+        for (int j = 0; j < columns; j++)
         {
-            array[i,j] = i+j;
+            array[i, j] = i + j;
         }
     }
 
@@ -55,11 +55,11 @@ int[,] Create2DRandomMas(int rows,int columns)
 
 void EvenNumber(int[,] array)
 {
-    for( int i = 0; i < array.GetLength(0); i+=2)
+    for (int i = 0; i < array.GetLength(0); i += 2)
     {
-        for(int j = 0; j < array.GetLength(1); j+=2)
-            array[i,j] *= array[i,j];
-    
+        for (int j = 0; j < array.GetLength(1); j += 2)
+            array[i, j] *= array[i, j];
+
         Console.WriteLine();
     }
 }
@@ -67,12 +67,12 @@ void EvenNumber(int[,] array)
 int SumDioganal(int[,] array)
 {
     int sum = 0;
-    for(int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            if(i == j)
-            sum += array[i,j];
+            if (i == j)
+                sum += array[i, j];
         }
     }
 
@@ -82,9 +82,9 @@ int SumDioganal(int[,] array)
 int DioganalSum(int[,] array)
 {
     int sum = 0;
-    for(int i = 0;i < array.GetLength(0) && i < array.GetLength(1); i++)
+    for (int i = 0; i < array.GetLength(0) && i < array.GetLength(1); i++)
     {
-        sum += array[i,i];
+        sum += array[i, i];
     }
 
     return sum;

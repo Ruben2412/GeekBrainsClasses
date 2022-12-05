@@ -1,15 +1,15 @@
 ﻿//************************************************************************** HomeWork 4 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 int Degree(int a, int b)
 {
     int degree = 1;
-    for(int i = 1; i <= b; i++)
+    for (int i = 1; i <= b; i++)
         degree *= a;
     return degree;
 }
@@ -18,7 +18,7 @@ int SumNum(int n)
 {
     int count = 0;
     int answer = 0;
-    while(count < 10)
+    while (count < 10)
     {
         answer += n % 10;
         n /= 10;
@@ -32,7 +32,7 @@ void CreateRandomArray(int size)
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(array.Length+1);
+        array[i] = new Random().Next(array.Length + 1);
         Console.Write($"{array[i]}; ");
     }
 }
@@ -40,26 +40,26 @@ void CreateRandomArray(int size)
 int[] CreateSpecialyArray(int size)
 {
     int[] array = new int[size];
-    for(int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         Console.Write($"Enter a value for the cell {i}: ");
         array[i] = Convert.ToInt32(Console.ReadLine());
-    
+
     }
     return array;
 }
 
 void ShowArray(int[] array)
 {
-Console.WriteLine("Output Massive: ");
-for(int i = 0; i< array.Length; i++)
-    Console.Write(array[i] + "; ");
+    Console.WriteLine("Output Massive: ");
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "; ");
 }
 
 //Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 Console.WriteLine("Enter two numbers. The second number will become a power for the first");
 int n1 = InputNumbers("Input a First number: ");
-int n2= InputNumbers("Input a Second number: ");
+int n2 = InputNumbers("Input a Second number: ");
 
 int result = Degree(n1, n2);
 

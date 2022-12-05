@@ -1,9 +1,9 @@
 ﻿//************************************************************************** Lesson 1 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 //Console.Write("Input a first number: ");
 //int n1 = Convert.ToInt32(Console.ReadLine());
@@ -12,18 +12,18 @@ int a = InputNumbers("Input a first number: ");
 int b = InputNumbers("Input a second number: ");
 
 int quad2 = b * b;
-    if(a * a == quad2)
-        Console.WriteLine("Yes");
-    else
-        Console.WriteLine("No");
+if (a * a == quad2)
+    Console.WriteLine("Yes");
+else
+    Console.WriteLine("No");
 
 Console.WriteLine();
 //при одноподчененным действии можно без скобок
 //Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все целые числа в промежутке от -N до N.
 int c = InputNumbers("Input some number: ");
-int current = - c;
+int current = -c;
 
-while(current <= c)
+while (current <= c)
 {
     Console.Write(current + " ");
     current++;

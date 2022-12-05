@@ -1,9 +1,9 @@
 ﻿//************************************************************************** HomeWork 8 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 int[,] CreateRandom2DArray(int rows, int columns, int minvalue, int maxvalue)
@@ -41,7 +41,7 @@ void Show2DArray(int[,] array)
     Console.WriteLine();
 }
 
-void CreateRandom3DArray(int[,,] array, int minNumber , int maxNumber)
+void CreateRandom3DArray(int[,,] array, int minNumber, int maxNumber)
 {
     Random rand = new Random();
 
@@ -150,16 +150,16 @@ void MultiplyArray(int[,] firstArray, int[,] secondArray, int[,] resultArray)
             int multiply = 0;
             for (int k = 0; k < firstArray.GetLength(1); k++)
             {
-                multiply += firstArray[i,k] * secondArray[k,j];
+                multiply += firstArray[i, k] * secondArray[k, j];
             }
-            resultArray[i,j] = multiply;
+            resultArray[i, j] = multiply;
         }
     }
 }
 
 //Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 //Первый Вариант
-int a= InputNumbers("Input a number of rows: ");
+int a = InputNumbers("Input a number of rows: ");
 int b = InputNumbers("Input a number of columns: ");
 int min = InputNumbers("Input a number of rows: ");
 int max = InputNumbers("Input a number of columns: ");
@@ -220,7 +220,7 @@ int[,] myFirstMas = CreateRandom2DArray(e, f, down, up);
 
 int[,] mySecondMas = CreateRandom2DArray(e, f, down, up);
 
-int[,] resultMas = new int[e,f];
+int[,] resultMas = new int[e, f];
 
 Show2DArray(myFirstMas);
 
@@ -242,7 +242,7 @@ int[,] mySecondArr = new int[4, 4];
 
 CreateRandom2DMas(mySecondArr);
 
-int[,] resultArr = new int[4,4];
+int[,] resultArr = new int[4, 4];
 
 Show2DArray(myFirstArr);
 
@@ -276,8 +276,8 @@ Console.WriteLine();
 int j = 4;
 int k = 4;
 int l = 4;
-int mini= 10;
-int maxi= 99;
+int mini = 10;
+int maxi = 99;
 
 int[,,] testMas = new int[j, k, l];
 

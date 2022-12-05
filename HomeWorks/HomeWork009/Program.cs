@@ -1,21 +1,21 @@
 ﻿//************************************************************************** HomeWork 9 *********************************************************************************************//
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 void ShowReverseNumber(int n, int count)
 {
     if (count > n) return;
-        ShowReverseNumber(n, count + 1);
-        Console.Write(count + ", ");
+    ShowReverseNumber(n, count + 1);
+    Console.Write(count + ", ");
 }
 
 void ShowReverseNumber2(int n)
 {
-    while(n > 0)
+    while (n > 0)
     {
         Console.Write(n + ", ");
         n--;
@@ -37,10 +37,10 @@ int SumMN(int a, int b)
 
 void Reverse(int m, int n)
 {
-if(m < n)
-    Console.WriteLine(SumMN(m -1, n));
-else
-     Console.WriteLine(SumMN(n -1, m));
+    if (m < n)
+        Console.WriteLine(SumMN(m - 1, n));
+    else
+        Console.WriteLine(SumMN(n - 1, m));
 }
 
 int Akerman(int m, int n)
