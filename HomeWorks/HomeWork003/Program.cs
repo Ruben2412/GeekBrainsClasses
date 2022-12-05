@@ -27,6 +27,16 @@ void Polindrom(string n)
         Console.WriteLine($"ОШИБКА: {n} - не является пятизначным");
 }
 
+bool IsPalindrom(char[] word)
+{
+    for (int i = 0; i < word.Length / 2; i++)
+    {
+        if (word[i] != word[word.Length - 1 - i])
+            return false;
+    }
+    return true;
+}
+
 double Long(double x1, double y1, double z1, double x2, double y2, double z2)
 {
     double A = x1 - x2;
@@ -47,11 +57,23 @@ void Cube(int n)
 }
 
 //Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+//Первый вариант
 string polind = InputStrings("Введите пятизначный Палиндром: ");
 
 Polindrom(polind);
 
 Console.WriteLine();
+//Второй вариант
+string letter = InputStrings("Введите пятизначный Палиндром: ");
+
+char[] mass = letter.ToCharArray();
+{
+    if (IsPalindrom(mass))
+        Console.WriteLine("!!!POLINDROME!!!");
+    else
+        Console.WriteLine("NOT POLINDROME");
+}
+
 //Задача 21 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 int x1 = InputNumbers("Input X1: ");
 int y1 = InputNumbers("Input Y1: ");
